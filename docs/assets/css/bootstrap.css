@@ -5413,3 +5413,27 @@ footer address {
   background: #fff;
   border-color: rgba(0, 0, 0, 0.1);
 }
+
+#overons header .header {
+  background: #6bbe45 url("/assets/img/overons.jpg") center center no-repeat fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+#overons #map {
+  height: auto;
+  min-height: 500px;
+}
+
+#overons #map_canvas {
+  height: auto;
+  min-height: 500px;
+}
+
+#overons #map_canvas img {
+  max-width: none;
+}

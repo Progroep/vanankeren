@@ -56,7 +56,7 @@
     <!-- Place anything custom after this. -->
   </head>
   
-  <body class="bs-docs-body" id="" data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body class="bs-docs-body" id="overons" data-spy="scroll" data-target=".bs-docs-sidebar">
 
     <!-- Main navbar for all docs pages. -->
     <!-- Navbar
@@ -84,7 +84,7 @@
           <a href="/overons">over ons</a>
         </li>
         <li >
-          <a href="/contact">contact</a>
+          <a href="/overons#contact">contact</a>
         </li>
       </ul>
     </div>
@@ -96,28 +96,84 @@
     <!-- Subhead
 ================================================== -->
 <header class="bs-docs-jumbotron subhead">
-  <div class="container">
-    <h1>Timmerbedrijf Van Ankeren</h1>
-    <p class="lead">Ruim 25 jaar kennis kunde en vakmanschap.</p>
-  </div>
+  <div class="header"></div>
+    <div class="container">
+      <h1>Timmerbedrijf Van Ankeren</h1>
+      <p class="lead">Ruim 25 jaar kennis kunde en vakmanschap.</p>
+    </div>
 </header>
 
 <section>
   <div class="container">
     <div class="row">
-      <div class="span6">
-        <p>
-          Al meer dan 25 jaar is ons timmerbedrijf gevestigd aan de schitterende Nieuwkoopse Plassen. 25 jaar waarin we aan veel projecten, maar vooral aan veel verschillende projecten, een bijdrage hebben mogen leveren. Met onze brede ervaring gaan we dan ook niet snel een project uit de weg. Bovendien zijn het vaak de bijzondere projecten waar we zelf veel voldoening uit halen. Of het nu gaat om een ingewikkelde constructie of het in ere herstellen van een klassiek pand, wij zoeken graag uitdagingen waarin we ons vakmanschap kunnen tonen. <br>
-
-    Ouderwetse degelijkheid, of het nu gaat om <b>traditionele timmerwerkzaamheden</b> of moderne bouwtechnieken, dat is waar wij voor staan. Wij zijn geen prijsvechter, wij leveren kwaliteit tegen een eerlijke prijs.
-
-        </p>
+      <div class="span12">
+        <div class="page-header">
+          <h2>Kwaliteit door ervaring</h2>
+        </div>
       </div>
     </div>
+    <div class="row">
+      <div class="span5">
+        <p>
+          Al meer dan 25 jaar is ons timmerbedrijf gevestigd aan de schitterende Nieuwkoopse Plassen. 25 jaar waarin we aan veel projecten, maar vooral aan veel verschillende projecten, een bijdrage hebben mogen leveren. Met onze brede ervaring gaan we dan ook niet snel een project uit de weg. Bovendien zijn het vaak de bijzondere projecten waar we zelf veel voldoening uit halen. Of het nu gaat om een ingewikkelde constructie of het in ere herstellen van een klassiek pand, wij zoeken graag uitdagingen waarin we ons vakmanschap kunnen tonen. <br><br>
+          Ouderwetse degelijkheid, of het nu gaat om <b>traditionele timmerwerkzaamheden</b> of moderne bouwtechnieken, dat is waar wij voor staan. Wij zijn geen prijsvechter, wij leveren kwaliteit tegen een eerlijke prijs.
+        </p>
+      </div>
+      <div class="span6 offset1">
+        <div id="map">
+          <div id="map_canvas"></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row" id="#contact">
+      <div class="span5">
+        <h3>Interesse of een vraag?</h3>
+        <p>Heb je interesse om met ons te werken, neem dan contact met ons op voor een offerte. Wij komen graag bij je kijken en maken een transparante prijs. Een andere vraag stellen mag natuurlijk ook.</p>
+      </div>
+      <div class="span6 offset1">
+        <form>
+          <div class="controls controls-row">
+              <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+              <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+          </div>
+          <div class="controls">
+              <textarea id="message" name="message" class="span6" placeholder="Your Message" rows="5"></textarea>
+          </div>
+          
+          <div class="controls">
+              <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">verzenden</button>
+          </div>
+        </form>
+      </div>
   </div>
 </section>
 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&callback=initialize"></script>
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(52.056855, 4.662843); // Change these values, to those appropriate for your location
 
+
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+        
+        var marker = new google.maps.Marker({
+        position: latlng, 
+        map: map,
+        title:"Noordpark" // You can give this any title you want
+    });     
+  }
+
+</script>
 
     <!-- Main docs footer (social buttons, copyright, etc). -->
     <!-- FOOTER -->
