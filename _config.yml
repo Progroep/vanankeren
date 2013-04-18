@@ -1,0 +1,13 @@
+# Dependencies
+markdown:     rdiscount
+pygments:     true
+auto: true
+
+# Permalinks
+permalink:    pretty
+
+# Server
+source:       ./docs
+destination:  ./_gh_pages
+url:          http://localhost:9001
+server_port:  9001

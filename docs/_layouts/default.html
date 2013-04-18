@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!--_____  ____  _    ___          ________  _____ _______       _____  
+  / ____|/ __ \| |  | \ \        / /  ____|/ ____|__   __|/\   |  __ \ 
+ | |  __| |  | | |  | |\ \  /\  / /| |__  | (___    | |  /  \  | |  | |
+ | | |_ | |  | | |  | | \ \/  \/ / |  __|  \___ \   | | / /\ \ | |  | |
+ | |__| | |__| | |__| |  \  /\  /  | |____ ____) |  | |/ ____ \| |__| |
+  \_____|\____/ \____/    \/  \/   |______|_____/   |_/_/    \_\_____/ 
+                                                              
+      |\/|  _. ._ |   _ _|_ o ._   _    ()    |\/|  _   _| o  _. 
+      |  | (_| |  |< (/_ |_ | | | (_|   (_X   |  | (/_ (_| | (_| 
+                                   _|                            
+                          © www.gouwestadmm.nl
+-->
+
+<html lang="nl">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include header.html %}
+    <!-- Place anything custom after this. -->
+  </head>
+  
+  <body class="bs-docs-body" id="{{ page.body-id }}" data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Main navbar for all docs pages. -->
+    {% include navbar.html %}
+
+    <!-- Page content of course! -->
+    {{ content }}
+
+    <!-- Main docs footer (social buttons, copyright, etc). -->
+    {% include colophon.html %}
+
+    <!-- JS and analytics only. -->
+    {% include footer.html %}
+
+  </body>
+</html>

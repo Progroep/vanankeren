@@ -1,0 +1,246 @@
+
+/* ==========================================================================
+	Base styles
+  used for some extra positioning possibilities
+========================================================================== */
+
+section{
+   padding: 3% 0;
+   }
+
+   .block{
+      position: absolute;
+      top: 50%;
+   }
+
+    .margin-top{
+    margin-top: 60px;
+   }
+
+   .small-padding{
+   padding: 20px;
+  }
+
+   .no-padding{
+    padding: 0;
+   }
+   
+   .content{
+      padding: 0 40px;
+   }
+
+/* ==========================================================================
+  Typography
+========================================================================== */
+
+body {
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.8em;
+}
+
+h1, h2, h3{
+  line-height: 1.2em;
+}
+
+h1{
+  font-size: 4em;
+  line-height: 1.1em;
+  font-weight: 700;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+h4, h5, h6{
+  font-weight: 500;
+}
+
+.intro{
+  line-height: 1.55em;
+  font-weight: 300;
+}
+
+li{
+  line-height: 1.65em;
+}
+
+
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+/* ==========================================================================
+  Headings
+========================================================================== */
+
+.center{
+   text-align: center;
+   display: block;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+  Coloring
+  Set background-color & set text color based on the background-color
+========================================================================== */
+
+.text-color (@bgcolor) when (lightness(@bgcolor) >= 50%) {
+  color: @textColor;
+  background: @bgcolor;
+}
+.text-color (@bgcolor) when (lightness(@bgcolor) < 50%) {
+  h1, h2, h3, h4, h5, h6, p, small{
+  color: @white;
+  }
+  color: #fff;
+  background: @bgcolor;
+}
+
+
+
+/* ==========================================================================
+  Responsive styles
+========================================================================== */
+
+
+@media screen and (min-width: 480px) {
+  body { font-size: 105.5%; }
+}
+
+
+@media screen and (min-width: 680px) {
+  body {
+    font-size: 115%;
+  }
+
+  p{
+    font-weight: 300;
+  }
+
+  .mac p{
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+
+@media screen and (min-width: 780px) {
+  body {font-size: 125%;}
+
+ 
+}
+
+
+@media (max-width: 767px) {
+//remove the Bootstrap body padding on small devices & add to container
+  body{
+   padding: 0;
+   .container{
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+  }
+
+//Special class to remove margin on container & row on mobile
+  .fullwidth-mobile{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+//smaller table font-sizes to fit screens
+  table{
+    font-size: 80%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+   .block{
+      width: 724px;
+   }
+}
+
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 150%;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 162.5%;
+  }
+
+  .block{
+   width: 1170px;
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  body {
+    font-size: 170%;
+  }
+
+}
+
+
+@media screen and (min-width: 1700px) {
+  body {
+    font-size: 180%;
+  }
+}
+
+@media screen and (min-width: 1950px) {
+  body {
+    font-size: 220%;
+  }
+
+  .container{
+   max-width: 1600px;
+
+   .block{
+      width: 1600px;
+   }
+  }
+}
+
+
+
+
+
+
+
+

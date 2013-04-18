@@ -1,0 +1,301 @@
+// Page specifieke stijlen
+
+body{
+  line-height: 1.8em;
+}
+
+
+/* ==========================================================================
+  Navbar
+========================================================================== */
+
+.navbar{
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+	.navbar-brand{
+		max-width: 350px;
+		padding: 15px 0;
+	}
+	ul.nav li{
+		padding-top: 25px;
+    a{
+      color: @brand-primary;
+      font-size: 80%;
+      font-weight: normal;
+    }
+	}
+}
+
+
+.lead{
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: 8px
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: @grayDark;
+}
+
+/* ==========================================================================
+  The Orange header
+========================================================================== */
+
+header{
+	background-color: @brand-primary !important;
+    display: block;
+    padding: 8% 0 !important;
+    position: relative;
+    margin-bottom: 0 !important; //Remove the margin form docs
+   .header{
+      background: url("/assets/img/temp-home.jpg") center center no-repeat fixed;
+      background-size: cover;
+      opacity: 0.3;
+      position: absolute;
+      display: block;
+      top:0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      z-index: 1;
+   }
+  .container{
+      display: block;
+      position: relative;
+      z-index: 2
+   }
+   h1{
+   	color: #fff;
+    font-size: 5em;
+   }
+ }
+
+ .bs-docs-jumbotron .btn{
+ 	color: #ED6C1A !important;
+ }
+
+/* ==========================================================================
+  Banner
+========================================================================== */
+
+.banner{
+	background: #ED6C1A;
+	padding: 1%;
+	margin: 0;
+	h3{
+		margin: 0;
+    color: #fff;
+	}
+}
+
+/* ==========================================================================
+  Footer
+========================================================================== */
+
+footer{
+  padding: 2% 0;
+  background: #565E62;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  color: #fff;
+  h3{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 0;
+    color: #fff;
+  }
+  li, address{
+    font-weight: 300;
+  }
+}
+
+.copy{
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 0.5%;
+  font-size: 80%;
+}
+
+
+#werk{
+  .header{
+    background: url("http://0.s3.envato.com/files/14246405/construction_home_concept9.JPG") no-repeat center center;
+    .background-size(cover);
+  }
+}
+
+/* ==========================================================================
+  Pagina energiebesparen
+========================================================================== */
+
+#energie{
+  color: #888;
+  h3{
+    font-weight: bold;
+  }
+      .btn{
+      background: #96C458;
+      color: #fff !important;//important classes moeten weg
+      text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+      border-color: rgba(0,0,0,0.15);
+    }
+  .intro{
+    font-weight: 300;
+    color: #787878;
+  }
+  .subhead{
+    background: url("http://0.s3.envato.com/files/22668271/445.jpg") no-repeat center center fixed;
+    .background-size(cover);
+    padding: 10% 0;
+    text-shadow: 0 0 45px rgba(0,0,0,0.2), 1px 1px 0 rgba(0,0,0,0.05);
+    i{
+      font-size: 3em;
+      color: #96C458;
+    }
+    .lead{
+      font-size: 1.2em;
+      letter-spacing: 0.1em;
+      margin: 3% auto;
+      text-shadow: none;
+      width: 80%;
+    }
+  }
+  #energiebespaarpakket{
+    position: relative;
+    background: url("http://2.s3.envato.com/files/39960367/gc-14.jpg") no-repeat center center;
+    .background-size(cover);
+    color: #fff;
+    .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    content: '';
+    background: rgba(0,0,0,0.1);
+    }
+    .container{
+      position: relative;
+    }
+    h3{
+      color: #fff;
+    }
+  }
+  .banner{
+    background: #6bbe45 url("/assets/img/energie-header.jpg") center center;
+    .background-size(cover);
+    padding: 3%;
+    .btn{
+      background: #fff;
+      color: #6bbe45 !important;
+      text-shadow: none;
+      border-color: rgba(0,0,0,0.15);
+    }
+  }
+  footer{
+    background: #fff;
+    color: @text-color;
+    h3{
+      color: @grayDark;
+    }
+  }
+  .copy{
+    border-top: 1px solid rgba(0,0,0,0.05);
+    background: @grayLighter;
+  }
+}
+
+#braakschade{
+  padding-top: 60px;
+  a{
+    color: #EB5A5D;
+  }
+      .nav-pills{
+      margin: 3% 0 2%;
+      font-size: 0.8em;
+    }
+    .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+      background: #EB5A5D;
+      color: #fff;
+    }
+  header{
+    background: #EB5A5D;
+  }
+  .header{
+    background: url("http://2.s3.envato.com/files/41473563/burglar1.jpg") no-repeat center center fixed;
+    .background-size(cover);
+    opacity: 0.9;
+  }
+  .banner{
+    background: #EB5A5D;
+    h3, p{
+      color: #fff;
+    }
+  }
+  .link{
+    padding: 3%;
+    .btn{
+      background: #fff;
+      color: #EB5A5D;
+      border-color: rgba(0,0,0,0.1);
+    }
+  }
+  #schade{
+    .fullwidth-background{
+      background: url("http://2.s3.envato.com/files/12167992/IMG_8492.jpg") no-repeat center center;
+      .background-size(cover);
+      padding: 6% 0;
+      h1{
+        color: #fff;
+        font-size: 3.3em;
+      }
+    }
+  }
+  footer a{
+    color: #fff;
+  }
+}
+
+
+#doen{
+  .fullwidth-background{
+      background: url("http://2.s3.envato.com/files/20853932/100M1016.JPG") no-repeat center center;
+      .background-size(cover);
+      padding: 6% 0;
+      h1{
+        color: #fff;
+        font-size: 3.3em;
+      }
+    }
+}
+
+#beveiligen{
+  .fullwidth-background{
+      background: url("http://3.s3.envato.com/files/10466142/iDPP_20110411_00008216.jpg") no-repeat center center;
+      .background-size(cover);
+      padding: 6% 0;
+      h1{
+        color: #fff;
+        font-size: 3.3em;
+      }
+    }
+}
+
+#schade24{
+   .subhead{
+      padding-top: 5%;
+      background: none;
+      .btn{
+        background: @brand-primary;
+        color: #fff !important;
+      }
+    }
+    .banner{
+      .btn{
+        background: #fff;
+        color: @brand-primary !important;
+        border-color: rgba(0,0,0,0.1);
+      }
+    }
+}
+
+
+//http://0.s3.envato.com/files/10466175/iDPP_20110411_00008216.jpg
